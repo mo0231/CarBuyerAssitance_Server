@@ -86,7 +86,7 @@ func QueryAllConsult(ctx context.Context, c *app.RequestContext) {
 	resp.Data = pack.CList(info, total)
 	resp.Base = pack.BuildBaseResp(errno.Success)
 	pack.SendResponse(c, resp)
-}
+}      
 
 // QueryA .
 // @router /api/admin/query [GET]
